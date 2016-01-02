@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Antoniobaiao_Productlist>
+            <version>0.1.0</version>    <!-- Version number of your module -->
+        </Antoniobaiao_Productlist>
+    </modules>
+    <frontend>
+        <routers>
+            <productlist>
+                <use>standard</use>
+                <args>
+                    <module>Antoniobaiao_Productlist</module>
+                    <frontName>productlist</frontName>
+                </args>
+            </productlist>
+        </routers>
+        <layout>
+            <updates>
+                <mymodule>
+                    <file>productlist.xml</file> <!-- Our layout file name-->
+                </mymodule>
+            </updates>
+         </layout>
+    </frontend>
+     <global>
+        <blocks>
+            <productlist>
+                <class>Antoniobaiao_Productlist_Block</class>
+            </productlist>
+        </blocks>        
+    </global>
+</config>

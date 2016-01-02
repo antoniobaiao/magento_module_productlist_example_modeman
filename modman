@@ -1,0 +1,9 @@
+#My Module
+app/code/local/Antoniobaiao/*    app/code/local/Antoniobaiao/
+
+#TopMenu design change for this example
+app/design/frontend/rwd/default/template/page/html/topmenu.phtml	app/design/frontend/rwd/default/template/page/html/topmenu.phtml
+
+#Module declaration
+app/etc/modules/Antoniobaiao_Productlist.xml	app/etc/modules/Antoniobaiao_Productlist.xml
+ 
