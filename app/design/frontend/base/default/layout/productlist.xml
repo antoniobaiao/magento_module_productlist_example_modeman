@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<layout version="0.1.0"> 
+     <productlist_index_index>  
+     <reference name="content">    	
+     	<!--<action method="setTemplate"><template>antoniobaiao/productlist/productlist.phtml</template></action>--> 
+        	<block type="core/template"  template="antoniobaiao/productlist/productlist.phtml" />  
+        </reference>  
+    </productlist_index_index> 
+</layout>

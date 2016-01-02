@@ -1,0 +1,44 @@
+<?php
+$products_collection = Mage::registry('products_collection');
+?>
+
+<h2>Products with price grather than:<h2>
+<form action="<?php echo Mage::getUrl('productlist/index') ?>" method="post">
+   
+                <label for="int1">price</label>
+                <input type="text" id="int1" name="int1" />
+           
+           <input type="submit" value="Search" />
+    </fieldset>
+</form>
+
+<div class="page-title">
+    <h1><?php echo $this->__('My Collection') ?></h1>
+</div>
+<?php if($products_collection->getSize()): ?>
+<table class="data-table" id="my-custom-table">    
+    <thead>
+        <tr>
+            <th><?php echo $this->__('ID #') ?></th>
+            <th><?php echo $this->__('Name') ?></th>
+            <th><?php echo $this->__('Price (€)') ?></th>
+            <th><span class="nobr"><?php echo $this->__('Created') ?></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php $_odd = ''; ?>
+        <?php foreach ($products_collection as $prod): ?>
+        <tr>
+            <td><?php echo $prod->getId() ?></td>
+            <td><span class="nobr"><?php echo $prod->getName(); ?></span></td>
+            <td><span class="nobr"><?php echo $prod->getPrice(); ?></span></td>
+            <td><?php echo $this->formatDate($prod->getCreatedTime()) ?></td>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<script type="text/javascript">decorateTable('my-custom-table');</script>
+<?php echo $this->getPagerHtml(); ?>
+<?php else: ?>
+    <p><?php echo $this->__('The collection is empty.'); ?></p>
+<?php endif ?>

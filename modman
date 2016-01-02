@@ -1,6 +1,10 @@
 #My Module
 app/code/local/Antoniobaiao/*    app/code/local/Antoniobaiao/
 
+#design information
+app/design/frontend/base/default/layout/productlist.xml		app/design/frontend/base/default/layout/productlist.xml
+app/design/frontend/base/default/template/antoniobaiao/		app/design/frontend/base/default/template/antoniobaiao/ 
+
 #TopMenu design change for this example
 app/design/frontend/rwd/default/template/page/html/topmenu.phtml	app/design/frontend/rwd/default/template/page/html/topmenu.phtml
 
